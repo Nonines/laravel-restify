@@ -74,7 +74,7 @@ The default prefix of all Restify routes (except `login` and `register`) lives u
 ...
 ```
 
-Tjus, Restify generates the URI for the repository in the following way:
+Thus, Restify generates the URI for the repository in the following way:
 
 ```php
 config('restify.base') . '/' . UserRepository::uriKey() . '/'
@@ -206,7 +206,7 @@ class PostRepository extends Repository
 
 Restify injects all `CRUD`'s operations for you. However, sometimes you may want to intercept or override
 the entire logic of a specific action. Let's say your `save` method has to do something else besides the action itself. In
-this case you can easily override each action ([defined here](#actions-handled-by-the-repository)) from the repository:
+this case you can easily override each action ([defined here](/repositories#actions-handled-by-the-repository)) from the repository:
 
 ### index
 
